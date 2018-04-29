@@ -1,0 +1,13 @@
+// add this to the `theme.scss` file
+
+@import '~@angular/material/theming';
+@include mat-core();
+
+$ngBlog-app-primary: mat-palette($mat-blue-grey, 900);
+$ngBlog-app-accent:  mat-palette($mat-red, A200);
+
+$ngBlog-app-warn:    mat-palette($mat-red);
+
+$ngBlog-app-theme: mat-light-theme($ngBlog-app-primary, $ngBlog-app-accent, $ngBlog-app-warn);
+
+@include angular-material-theme($ngBlog-app-theme);
